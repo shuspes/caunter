@@ -8,11 +8,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run test && lint-staged"
     }
   },
   "lint-staged": {
-    "*.js": ["npm run test", "eslint --fix", "git add"]
+    "*.js": ["eslint --fix", "git add"]
   },
   "repository": {
     "type": "git",
